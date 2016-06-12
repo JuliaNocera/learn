@@ -1,0 +1,5 @@
+
+
+Delete a local branch: git branch -D <local-branch-name>
+
+Show logs with branch view: git lg

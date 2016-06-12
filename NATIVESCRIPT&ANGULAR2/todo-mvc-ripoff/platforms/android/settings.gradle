@@ -1,0 +1,3 @@
+rootProject.name = "todomvcripoff"
+include "asbg"
+project(":asbg").projectDir = file("build-tools/android-static-binding-generator")
