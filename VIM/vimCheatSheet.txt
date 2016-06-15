@@ -1,0 +1,56 @@
+VIM: 
+
+|| Normal Mode ||
+-----------------
+
+: MOVING AROUND :
+w : jump to start of words (punctuation considered a word) 
+W : jump to start of words (space seperated words) 
+e : jump to end of words (punctuation considered a word)
+E : jump to end of words (space seperated words)
+b : jump backwards by words ()
+B : jump backwards by words ()
+0 : jump to start of line
+^ : jump to first non-blank character of line
+$ : jump to end of line 
+
+** ADVANCED Movement** 
+--------------------- 
+Ctrl+d : move down half a page 
+Ctrl+u : move up half a page
+}  : go forward by paragraph (next blank line)
+{  : go backward by paragraph (next blank line)
+gg : go to top of the file
+G  : go to bottom of the file
+: [num] [enter]  :  Go to that line in the document
+
+** Searching ** 
+---------------
+f : Move to the next char on the current line after the cursor 
+F : Move to the next char on the current line beforea the cursor 
+t : Move to before the next char on the current line after the cursor 
+T : Move to before the next char on the current line before the cursor 
+	(All of these can be followed by ; to go to the next searched item and , to go the previos searched item)
+
+
+: INSERT / APPENDING / EDITING TEXT 
+
+** Results in Insert Mode ** 
+---------------------------
+i : start insert mode at cursor 
+I : insert ar beggining of the line
+a : append after cursor 
+A : append at end of line
+o : open (append) blank line below current line 
+O : open blank line above current line
+cc : change (replace) an entire line  
+c [movement command] : change (replace) from cursor to move-to point
+ESC : exit insert mode 
+r [char] : replace a single character with specified character 
+d : delete
+	d [movement command] : deletes from cursor to move point
+dd : delete current line
+** ADVANCED ** 
+J : join line below to current one 
+
+ 
