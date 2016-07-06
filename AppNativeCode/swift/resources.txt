@@ -1,4 +1,37 @@
 Simple Tip Calclulator app : 
   https://www.raywenderlich.com/115279/swift-2-tutorial-part-2-a-simple-ios-app
 
+Treehouse : 
+  https://teamtreehouse.com/library/swift-20-basics/an-introduction-to-swift-programming/what-is-swift
+
+Tetris build :
+   https://www.bloc.io/swiftris-build-your-first-ios-game-with-swift
+
+Apps with Swift :
+  http://www.ios-blog.co.uk/tutorials/swift/developing-ios-apps-using-swift-part-1/
+
+List of tutorials : 
+  http://www.skilledup.com/articles/6-best-free-swift-tutorials-programming-new-language
+
+itunes U :
+  https://itunes.apple.com/us/course/developing-ios-9-apps-swift/id1104579961
+
+____________________________________________________________________
+--------------------------------------------------------------------
+--------------------------- SWIFT 3 --------------------------------
+____________________________________________________________________
+
+Swift 3 getting started :
+  http://www.macworld.co.uk/how-to/mac-software/how-get-started-with-apple-swift-programming-developers-2016-3-3523633/
+
+Complete Guide to Swift3 : 
+
+
+udemy :
+  https://www.udemy.com/build-5-very-cool-apps-with-swift-from-start-to-finish/?siteID=TnL5HPStwNw-aVnTBTvqK15RXqLVDiN3dA&LSNPUBID=TnL5HPStwNw
+
+functions :
+  http://swiftly-functional.blogspot.co.uk/
+
+
 
