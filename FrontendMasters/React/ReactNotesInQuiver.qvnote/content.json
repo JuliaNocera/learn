@@ -1,0 +1,32 @@
+{
+  "title": "React Notes",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<h1>Your First Component :</h1><div>** there is a notes.js file in each exerecise in the repo that have all the things covered in there for referrence on syntax etc</div><div><br></div><div>This repo uses commonJS to require things&nbsp;</div><div><br></div><div>********<a href=\"https://github.com/staygrimm/sort-by#example)\" style=\"color: rgb(128, 187, 255);\">https://github.com/staygrimm/sort-by#example</a>****&nbsp;<span style=\"line-height: 1.4;\">sortBy library that rocks!!!</span><span style=\"line-height: 1.4;\">&nbsp;</span><br></div><div><br></div>when writing html elements as functions in React you can use two diff styles, one being JSX which is generally preferred as it is more clear&nbsp;<div><br></div>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// new ES6 syntax called destructering assignment which is the same as : \n// var h1 = React.DOM.h1; \n// var div = React.DOM.div;\n// var ul = React.DOM.ul;\n// var li = React.DOM.li;\nvar { h1, div, ul, li } = React.DOM; \n\nvar element = (\n  div({},         // this === div (f) w/ h1 & ul arg &-> ul arg contains li args \n    h1({}, \"Hello\"),\n    ul({}, \n      li({}, \"Mark with C\"), \n      li({}, \"Marc with K\")\n    )\n  )\n);\n\n// element2 uses JSX but does the same things as the above\nvar element2 = (\n  <div>\n    <h1>Hello from JSX</h1>\n    <ul>\n      <li>Jewels</li>\n      <li>Julia</li>\n    </ul>\n  </div>\n);\n\nReact.render(element, document.body);\n\n// debugger keyword here lets you see app.js in dev tools and see what React does with above\ndebugger;"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// you can also make composite components like this below (it is the same thing as element2)\nvar App = React.createClass({\n  render () {\n    return (\n      <div> // you always have to wrap ui in a div element ¡\n        <h1>Hello from JSX</h1>\n        <ul>\n          <li>Jewels</li>\n          <li>Julia</li>\n        </ul>\n      </div>\n    );\n  }\n});\n\n// new ES6 features make it so you can't call App() directly & you have to make it into a \n// factory first -- becuase of a new Class component/method(?) in ES6\nApp = React.createFactory(App);\n\nReact.render(App(), document.body);"
+    },
+    {
+      "type": "text",
+      "data": "sortBy library that rocks!!! ********<a href=\"https://github.com/staygrimm/sort-by#example)\">https://github.com/staygrimm/sort-by#example</a>************<div><br></div><div>The nice thing about React is you really just can use JavaScript to do what you need such as filter, sort and map instead of relying on methods built into the framework such as AngularJS does&nbsp;</div><div><br></div><h1>Props:&nbsp;</h1><div>** MOST IMPORTANT THING TO UNDERSTAND</div><div>properties that you pass into a component&nbsp;</div><div><br></div>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "var React = require('react');\n\nvar input = <input type=\"checkbox\" />\n//same as : \n//React.DOM.input({type: \"checkbox\"})\n\nvar Gravatar = React.createClass({\n  render () {\n    return <span>{this.props.email}</span>;\n  }\n});\n\nvar element = <Gravatar email=\"giulz42@gmail.com\" />\n\nReact.render(element, document.body);\n"
+    },
+    {
+      "type": "text",
+      "data": "`React Proptypes` in google search and you get this page:&nbsp;<a href=\"https://facebook.github.io/react/docs/reusable-components.html\">https://facebook.github.io/react/docs/reusable-components.html</a><div>which has many proptypes listed&nbsp;</div>"
+    }
+  ]
+}

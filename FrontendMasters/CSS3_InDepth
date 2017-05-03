@@ -1,0 +1,40 @@
+CSS3_InDepthFEM
+
+by: Estelle Weyl
+
+Content-editable —> property in html that lets user change content - won’t save on refresh but actually works in style tag to change styles on the page for ex
+
+
+:nth-child(an+b) :: a = incremented, n = variable(always n), b = offset
+	ex: :nth-child(3n) —> every 3rd child 
+	    vs. :nth-child(3) —> just the 3rd element
+
+ex: :nth-child(3n+17) —> start at 17th element and from there are on every 3rd element
+
+key words: even, odd ::ex::    :nth-child(even) :nth-child(odd)
+
+
+Look in to ‘target’
+
+‘::’ (double colon) is peudo element not class
+
+HTML5 boilerplate -> read it
+
+library: selectivizer.com shows support
+
+you dont need jQuery if only selecting 1 or 2 elements use : document.querySelectorAll(selector)
+
+
+!important --> use for debugging elements tyling
+
+GENERATED CONTENT: 
+	not part of the DOM - can't highlight or manipulate with JS but can style 
+
+	p:before {
+		content: "before content -";
+		font-weight: bold;
+	}
+	p:after {
+		content: '- after content';
+		font-weight: bold;
+	}
